@@ -8,7 +8,7 @@
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.project.Elisa</groupId>
+	<groupId>com.project.Elisa.ElisaProject</groupId>
 	<artifactId>ElisaProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Project1</name>
@@ -17,6 +17,15 @@
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<version>3.2.2</version>
+		</dependency>
+
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -54,18 +63,15 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.7.7</version>
 		</dependency>
 		<!-- logback -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
-			<version>1.1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -82,13 +88,14 @@
 				<configuration>
 					<excludes>
 						<exclude>
-							<groupId>org.projectlombok</groupId>
+							<groupId>org.project-lombok</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>project-one</finalName>
 	</build>
 
 </project>
