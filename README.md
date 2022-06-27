@@ -7,28 +7,43 @@ Set up the backend for an online store to buy items. Users can register and log 
 
 Register User
 http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/register
+-POST
+-enter variables in User
 
 User Login
 http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/login/{username}/{password}
+-POST
+-enter details you have registered in register user
 
 Get All Users
 http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/getusersandcarts
+-GET
+- please login as an admin
 
 Adding Item
 http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/additem
+-POST
+-enter variables {"itemId", "itemName", "qoh", "price"}
 
 Add Product to Cart
 http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/addproducttocart/{useriD}/{password}
+-PUT
+- enter variables {"userId", "itemId"}
 
 Get All Items
 http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/getitemsinstock
+-GET
 
 Delete Item
 http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/deleteitem/{itemiD}
+-DELETE
+-enter variable {"itemId"}
 
 Delete User
 http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/deleteuser/{userId}
+-DELETE
+-enter variable {"userId"}
 
 Logout
 http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/logout
-
+-POST
