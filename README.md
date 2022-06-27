@@ -6,20 +6,29 @@ Set up the backend for an online store to buy items. Users can register and log 
 #Project Requirements
 
 Register User
+http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/register
 
 User Login
+http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/login/{username}/{password}
 
 Get All Users
+http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/getusersandcarts
 
 Adding Item
+http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/additem
 
 Add Product to Cart
+http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/addproducttocart/{useriD}/{password}
 
 Get All Items
+http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/getitemsinstock
 
 Delete Item
+http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/deleteitem/{itemiD}
 
 Delete User
+http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/deleteuser/{userId}
 
 Logout
+http://ec2-52-202-91-226.compute-1.amazonaws.com:8084/logout
 
